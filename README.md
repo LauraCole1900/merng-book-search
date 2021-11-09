@@ -39,12 +39,12 @@ If you want to run a copy of this app on your local machine, first clone the rep
 
 HTTPS:
 ```
-$ git clone https://github.com/LauraCole1900/reactEmployeeDirectory.git
+$ git clone https://github.com/LauraCole1900/merng-book-search.git
 ```
 
 SSH:
 ```
-$ git clone git@github.com:LauraCole1900/reactEmployeeDirectory.git
+$ git clone git@github.com:LauraCole1900/merng-book-search.git
 ```
 
 Then cd/ into the cloned directory and download the dependencies by typing into the command line
