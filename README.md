@@ -16,7 +16,7 @@
 
 ## Description
 
-This application uses MongoDB, Express, React, Node, and GraphQL to create a book-search using Google's API.
+This application uses MongoDB, Express, React, Node, and GraphQL to create a book search using Google's API.
 
 ## Links
 
