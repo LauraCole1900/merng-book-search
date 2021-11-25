@@ -63,7 +63,7 @@ This project is intended to be used to find books using Google's API.
 
 ## Technologies Used
 
-[![MongoDB](https://img.shields.io/badge/built%20with-MongoDB-4db33d)](https://www.mongodb.com/) [![Express.js](https://img.shields.io/badge/built%20with-Express.js-303030)](https://expressjs.com/) [![React](https://img.shields.io/badge/built%20with-React-61dbfb)](https://reactjs.org/) [![Node.js](https://img.shields.io/badge/built%20with-Node.js-3c873a)](https://nodejs.org/en/) [![GraphQL](https://img.shields.io/badge/built%20with-GraphQL-c00095)](https://graphql.org/)
+[![MongoDB](https://img.shields.io/badge/built%20with-MongoDB-4db33d)](https://www.mongodb.com/) [![Express.js](https://img.shields.io/badge/built%20with-Express.js-303030)](https://expressjs.com/) [![React](https://img.shields.io/badge/built%20with-React-61dbfb)](https://reactjs.org/) [![Node.js](https://img.shields.io/badge/built%20with-Node.js-3c873a)](https://nodejs.org/en/) [![GraphQL](https://img.shields.io/badge/built%20with-GraphQL-c00095)](https://graphql.org/) [![Mongoose](https://img.shields.io/badge/built%20with-Mongoose-880000)](https://mongoosejs.com/) [![JWT](https://img.shields.io/badge/built%20with-JWT-d63aff)](https://jwt.io/)
 
 ## Tests
 
