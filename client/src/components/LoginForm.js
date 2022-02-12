@@ -30,7 +30,7 @@ const LoginForm = () => {
 
     try {
       const { data } = await login({
-        variables: { ...userData },
+        variables: { ...userFormData },
       });
       if (!response.ok) {
         throw new Error('Incorrect login. Try again');
