@@ -37,7 +37,7 @@ const resolvers = {
     },
 
     login: async (_, { email, password }) => {
-      const user = await User.findOne({ email1: email });
+      const user = await User.findOne({ email: email });
       // If user email isn't found, throw auth error
       if (!user) {
         throw new AuthenticationError("Login failed. Try again");

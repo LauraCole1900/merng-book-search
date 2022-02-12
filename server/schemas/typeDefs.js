@@ -22,7 +22,7 @@ type Book {
   bookId: String!
   image: String
   link: String
-  title: String
+  title: String!
 }
 
 
@@ -37,7 +37,7 @@ input BookInput {
   bookId: String!
   image: String
   link: String
-  title: String
+  title: String!
 }
 
 
