@@ -41,12 +41,13 @@ input BookInput {
 }
 
 
-################
-#    Queries   #
-################
+#################
+#    Queries    #
+#################
 
 type Query {
   getSingleUser: User
+  me: User
 }
 
 
