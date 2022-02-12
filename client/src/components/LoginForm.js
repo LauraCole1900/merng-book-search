@@ -32,8 +32,8 @@ const LoginForm = () => {
       const { data } = await login({
         variables: { ...userFormData },
       });
-      if (!response.ok) {
-        throw new Error('Incorrect login. Try again');
+      if (!data) {
+        throw new Error('Login failed. Try again');
       }
       Auth.login(data.login.token);
     } catch (err) {

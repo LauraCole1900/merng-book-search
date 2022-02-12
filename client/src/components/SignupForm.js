@@ -34,8 +34,8 @@ const SignupForm = () => {
       const { data } = await createUser({
         variables: { ...userFormData },
       });
-      if (!response.ok) {
-        throw new Error('Incorrect login. Try again');
+      if (!data) {
+        throw new Error('Signup failed. Try again');
       }
       Auth.login(data.login.token);
     } catch (err) {
