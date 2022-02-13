@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
 import { Navigate } from "react-router-dom";
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 import { useMutation, useQuery } from "@apollo/client";
@@ -7,7 +7,6 @@ import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
-  // const [userData, setUserData] = useState({});
 
   //=================//
   //     Queries     //

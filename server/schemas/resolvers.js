@@ -64,10 +64,8 @@ const resolvers = {
     },
 
     deleteBook: async (_, args, context) => {
-      console.log({ args }, context.user._id);
       if (context.user) {
         const user = await User.findByIdAndUpdate({ _id: context.user._id }, { $pull: { savedBooks: { bookId: args.bookToDelete } } }, { new: true });
-        console.log({ user });
         return user;
       } else {
         throw new AuthenticationError("Must be logged in");
