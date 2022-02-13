@@ -40,7 +40,6 @@ const SignupForm = () => {
     if (form.checkValidity() === false) {
       e.preventDefault();
       e.stopPropagation();
-      console.log({ userFormData });
     }
     try {
       const { data } = await createUser({
