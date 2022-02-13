@@ -16,7 +16,7 @@ const SignupForm = () => {
 
 
   //=================//
-  //     Queries     //
+  //    Mutations    //
   //=================//
 
   const [createUser, { error }] = useMutation(CREATE_USER);
