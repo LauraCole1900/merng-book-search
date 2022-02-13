@@ -20,18 +20,24 @@ This application uses MongoDB, Express, React, Node, and GraphQL to create a boo
 
 ## Links
 
-[Deployed application on Heroku](https://#.herokuapp.com) NOT DEPLOYED YET
+[Deployed application on Heroku](https://its-a-merng-book-searcher.herokuapp.com/)
 
 ## Screenshots
 
 Landing page:
 ![Landing page:](assets/landing-page-screenshot.png)
 
-Search form:
-![Search form](assets/search-form-screenshot.png)
+Sign-up page:
+![Sign-up page](assets/signup-page-screenshot.png)
 
-Search results:
-![Search results](assets/search-results-screenshot.png)
+Login page:
+![Login page](assets/login-page-screenshot.png)
+
+Search results (truncated):
+![Search results](assets/search-page-with-results.png)
+
+Saved books page:
+![Saved books page](assets/saved-books-screenshot.png)
 
 ## Installation Instructions
 
@@ -83,4 +89,4 @@ If you have further questions, you can reach me at lauracole1900@comcast.net. Fo
 
 ## Badges
 
-[![License badge](https://img.shields.io/badge/license-MIT-00008b)](./LICENSE) [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/LauraCole1900/merng-book-search)
+[![License badge](https://img.shields.io/badge/license-MIT-343a40)](./LICENSE) [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/LauraCole1900/merng-book-search)
