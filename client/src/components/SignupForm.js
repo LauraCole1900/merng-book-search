@@ -1,25 +1,38 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
-
 import { useMutation } from "@apollo/client";
 import { CREATE_USER } from "../utils/gql";
 import Auth from '../utils/auth';
 
 const SignupForm = () => {
-  // set initial form state
+
+  //=================//
+  //      State      //
+  //=================//
+
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
-  // set state for form validation
   const [validated] = useState(false);
-  // set state for alert
   const [showAlert, setShowAlert] = useState(false);
+
+
+  //=================//
+  //     Queries     //
+  //=================//
 
   const [createUser, { error }] = useMutation(CREATE_USER);
 
+
+  //=================//
+  //     Methods     //
+  //=================//
+
+  // Handles changes to form fields
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserFormData({ ...userFormData, [name]: value });
   };
 
+  // Handles form submission
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     // check if form has everything (as per react-bootstrap docs)
@@ -38,13 +51,13 @@ const SignupForm = () => {
       console.error(err);
       setShowAlert(true);
     }
-
     setUserFormData({
       username: '',
       email: '',
       password: '',
     });
   };
+
 
   return (
     <>
