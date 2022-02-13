@@ -9,9 +9,17 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraCole1900/merng-book-search"
+  },
+  "bugs": {
+    "url": "https://github.com/LauraCole1900/merng-book-search/issues"
+  },
+  "homepage": "https://its-a-merng-book-searcher.herokuapp.com/",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "concurrently": "^5.1.0",
     "graphql-config": "^4.1.0"
