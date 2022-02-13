@@ -25,6 +25,11 @@ type Book {
   title: String!
 }
 
+type Auth {
+  token: ID!
+  user: User
+}
+
 
 ##################
 #     Inputs     #
@@ -56,7 +61,7 @@ type Query {
 #################
 
 type Mutation {
-  createUser(username: String!, email: String!, password: String!): User
+  createUser(username: String!, email: String!, password: String!): Auth
 
   login(email: String! password: String!): Auth
 

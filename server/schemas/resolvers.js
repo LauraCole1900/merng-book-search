@@ -33,7 +33,11 @@ const resolvers = {
   Mutation: {
 
     createUser: async (_, args) => {
-      return await User.create(args);
+      const user = await User.create(args);
+      console.log({ user });
+      const token = signToken(user);
+      console.log(user, { token });
+      return { token, user };
     },
 
     login: async (_, { email, password }) => {
@@ -53,8 +57,9 @@ const resolvers = {
     },
 
     saveBook: async (_, args, context) => {
+      console.log({ args }, { context });
       if (context.user) {
-        const user = await User.findByIdAndUpdate({ _id: context.user._id }, { $push: { savedBooks: args.bookToSave } }, { new: true });
+        const user = await User.findByIdAndUpdate({ _id: context.user._id }, { $push: { savedBooks: args.savedBooks } }, { new: true });
         return user;
       } else {
         throw new AuthenticationError("Must be logged in");

@@ -4,7 +4,7 @@ const { ApolloServerPluginDrainHttpServer } = require("apollo-server-core");
 const path = require("path");
 const http = require("http");
 
-const { typeDefs, resolvers } = require("./schema");
+const { typeDefs, resolvers } = require("./schemas");
 const { authMiddleware } = require("./utils/auth");
 const db = require("./config/connection");
 
